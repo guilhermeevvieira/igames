@@ -1,28 +1,24 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const db = require('./db.json')
+const fs = require('fs')
 
 app.use(bodyParser.json());
 
-let igames = {   
-        "id": 0,
-        "cliente": 'kaynan',
-        "pagamento": 'pix',
-        "data": '24/01/2024',
-        "nome": "gta",
-        "valor": 100,
-        "codigo": 'DNQFXFOPA'
-
-    }
-
-
-
 app.get('/igames', (req,res) => {
-    res.json(igames)
+    res.json(db)
 })
 
-const port = 3000;
+app.post('/igames', (req,res) =>{
+    const novaVenda = req.body
+    db.vendas.push(novaVenda)
+    fs.writeFileSync('db.json', JSON.stringify(db, null, 2))
+    res.json(db)
+});
+
+const port = 3300;
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
-})
+});
