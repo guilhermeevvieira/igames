@@ -1,23 +1,49 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const db = require('./db.json')
-const fs = require('fs')
+const URL = "http://localhost:3000"
 
 app.use(bodyParser.json());
 
-app.get('/igames', (req,res) => {
-    res.json(db)
+app.get('/igames', async (req,res) => {
+    
+    const response = await fetch(`${URL}/vendas`);
+    const json = await response.json();
+    
+    res.json(json)
+
 })
 
-app.post('/igames', (req,res) =>{
+app.post('/igames', async (req,res) =>{
 
-    const novaVenda = req.body
-    db.vendas.push(novaVenda)
-    fs.writeFileSync('db.json', JSON.stringify(db, null, 2))
-    res.json(db)
+    const response = await fetch(`${URL}/vendas`, {
+        method:'POST',
+        body:JSON.stringify(req.body)
+    });
+    const json = await response.json();
 
+    res.json(json)
 });
+
+app.put('/igames/:id', async (req,res) =>{
+    const response = await fetch(`${URL}/vendas/${req.params.id}`,{
+        method:'PUT',
+        body:JSON.stringify(req.body)
+    });
+    const json = await response.json();
+
+    res.json(json)
+})
+
+app.delete('/igames/:id', async (req,res) =>{
+    const response = await fetch(`${URL}/vendas/${req.params.id}`, {
+        method:'DELETE'
+    });
+    const json = await response.json();
+
+    res.json(json);
+
+})
 
 const port = 3300;
 app.listen(port, () => {
