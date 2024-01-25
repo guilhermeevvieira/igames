@@ -1,0 +1,26 @@
+{
+  "vendas": [
+    {
+      "cliente": "kaynan",
+      "pagamento": "pix",
+      "data": "24/01/2024",
+      "nome": "gta",
+      "valor": 100,
+      "codigo": "DNQFXFOPA",
+      "id": "7e20"
+    },
+    {
+      "cliente": "guilherme",
+      "pagamento": "dinheiro",
+      "data": "25/01/2024",
+      "nome": "dark souls",
+      "valor": 120,
+      "codigo": "DQWIDQOWD",
+      "id": "5047"
+    },
+    {
+      "cliente": "leticia",
+      "id": "1c64"
+    }
+  ]
+}
