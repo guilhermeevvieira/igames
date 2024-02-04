@@ -19,8 +19,49 @@
       "id": "5047"
     },
     {
-      "cliente": "leticia",
-      "id": "1c64"
+      "id": "3352",
+      "cliente": "Nicole",
+      "pagamento": "Crédito",
+      "data": "2024-02-03",
+      "nome": "the sims",
+      "valor": "20",
+      "codigo": "ABCDE"
+    },
+    {
+      "id": "604c",
+      "cliente": "",
+      "pagamento": "Débito",
+      "data": "02/02/2024",
+      "nome": "",
+      "valor": "",
+      "codigo": ""
+    },
+    {
+      "id": "dae7",
+      "cliente": "",
+      "pagamento": "Débito",
+      "data": "04/02/2024",
+      "nome": "",
+      "valor": "",
+      "codigo": ""
+    },
+    {
+      "id": "c8dc",
+      "cliente": "",
+      "pagamento": "Débito",
+      "data": "02/02/2024",
+      "nome": "",
+      "valor": "",
+      "codigo": ""
+    },
+    {
+      "id": "60d7",
+      "cliente": "",
+      "pagamento": "Débito",
+      "data": "02/02/2024",
+      "nome": "",
+      "valor": "",
+      "codigo": ""
     }
   ]
 }

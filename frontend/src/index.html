@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./icon-games.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="/frontend/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,27 +42,27 @@
             <div class="formularios">
                 <label for="">
                     Nome do jogo:
-                    <input type="text" placeholder="Nome do jogo">
+                    <input class="nomeJogo" type="text" placeholder="Nome do jogo">
                 </label>
 
                 <label for="">
                     Data da venda:
-                    <input type="date" placeholder="Data da venda">
+                    <input class="data" type="date" placeholder="Data da venda">
                 </label>
 
                 <label for="">
                     Código do jogo:
-                    <input type="text" placeholder="Código do jogo">
+                    <input class="codigo" type="text" placeholder="Código do jogo">
                 </label>
 
                 <label for="">
                     Valor do jogo:
-                    <input type="number" placeholder="Valor do jogo">
+                    <input class="valor" type="number" placeholder="Valor do jogo">
                 </label>
 
                 <label for="">
                     Forma de pagamento:
-                    <select name="forma-de-pagamento" id="">
+                    <select class="pagamento" name="forma-de-pagamento" id="">
                         <option value="Débito">Débito</option>
                         <option value="Crédito">Crédito</option>
                         <option value="Pix">Pix</option>
@@ -71,18 +71,35 @@
 
                 <label for="">
                     Nome do cliente:
-                    <input type="text" placeholder="Nome do cliente">
+                    <input class="cliente" type="text" placeholder="Nome do cliente">
                 </label>
 
-                <button type="submit">Cadastrar</button>
             </div>
-            
+            <button type="button" onclick="adicionaVendas(event)">Cadastrar</button>
+
+        </div>
+    </div>
+
+    <div class="position-lista">
+        <div class="lista">
+            <ul>
+                <li>
+                    <b>ID do jogo</b>
+                    <b>Nome do Jogo</b>
+                    <b>Código do jogo</b>
+                    <b>Valor do jogo</b>
+                    <b>Tipo Pag.</b>
+                    <b>Data da venda</b>
+                    <b>Nome Cliente</b>
+                </li>
+            </ul>
         </div>
     </div>
 
 
-
-    <script src="/frontend/scripts/index.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
+
+<!-- http://localhost:3300/igames  -->
