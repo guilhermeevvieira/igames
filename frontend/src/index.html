@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./icon-games.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital@1&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Igames</title>
 </head>
+
 <body>
-    teste
+    <nav class="nav">
+        <div class="icon-nav">
+            <img class="img-icon" width="43px" height="43px" src="./icon-games.jpeg" alt="icone-igames">
+            <h2>Igames</h2>
+        </div>
+
+        <div class="options-nav">
+            <section>Ajuda</section>
+            <section>Sobre nós</section>
+            <section>Conta</section>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="title-welcome">
+            <p> Bem-vindo(a) ao gerenciador de vendas da Igames!</p>
+        </div>
+    </header>
+
+    <div class="gerenciador">
+        <div class="cadastro-vendas">
+
+            <h3>Cadastrar venda</h3>
+
+            <div class="formularios">
+                <label for="">
+                    Nome do jogo:
+                    <input class="nomeJogo" type="text" placeholder="Nome do jogo">
+                </label>
+
+                <label for="">
+                    Data da venda:
+                    <input class="data" type="date" placeholder="Data da venda">
+                </label>
+
+                <label for="">
+                    Código do jogo:
+                    <input class="codigo" type="text" placeholder="Código do jogo">
+                </label>
+
+                <label for="">
+                    Valor do jogo:
+                    <input class="valor" type="number" placeholder="Valor do jogo">
+                </label>
+
+                <label for="">
+                    Forma de pagamento:
+                    <select class="pagamento" name="forma-de-pagamento" id="">
+                        <option value="Débito">Débito</option>
+                        <option value="Crédito">Crédito</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                </label>
+
+                <label for="">
+                    Nome do cliente:
+                    <input class="cliente" type="text" placeholder="Nome do cliente">
+                </label>
+
+            </div>
+            <button type="button" onclick="adicionaVendas(event)">Cadastrar</button>
+
+        </div>
+    </div>
+
+    <div class="position-lista">
+        <div class="lista">
+            <ul>
+                <li>
+                    <b>ID do jogo</b>
+                    <b>Nome do Jogo</b>
+                    <b>Código do jogo</b>
+                    <b>Valor do jogo</b>
+                    <b>Tipo Pag.</b>
+                    <b>Data da venda</b>
+                    <b>Nome Cliente</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="../scripts/index.js"></script>
 </body>
+
 </html>
+
+<!-- http://localhost:3300/igames  -->

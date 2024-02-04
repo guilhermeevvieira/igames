@@ -1,8 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
+const cors = require("cors")
 const app = express();
 const URL = "http://localhost:3000"
 
+
+app.use(cors())
 app.use(bodyParser.json());
 
 app.get('/igames', async (req,res) => {
@@ -16,6 +20,7 @@ app.get('/igames', async (req,res) => {
 
 app.post('/igames', async (req,res) =>{
 
+    console.log(req.body);
     const response = await fetch(`${URL}/vendas`, {
         method:'POST',
         body:JSON.stringify(req.body)

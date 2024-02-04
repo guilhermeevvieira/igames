@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    height: 10vh;
+    background-color: #893ca5;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-nav{
+    display: flex;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-icon{
+    margin-right: 5px;
+}
+
+.options-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 18vw;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.header{
+    height: 28vh;
+    background-color: #32015e;
+    color: #FFF;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-welcome{
+    margin-top: 28px;
+}
+
+.gerenciador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-vendas{
+    background-color: #edecec;
+    width: 80vw;
+    height: 28%;
+    position: relative;
+    margin-top: -80px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.formularios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+input{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+input:hover{
+    background-color: #f5f4f4;
+}
+
+select{
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+select:hover{
+    background-color: #f5f4f4;
+}
+
+button{
+    padding: 6px;
+    width: 155px;
+    color: #FFF;
+    background-color: #32015e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #52108d;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    column-gap: 16px;
+}
+
+b, span{
+    flex: 1;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista{
+    background-color: #893ca5;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    width: 80%;
+    border-radius: 7px;
+}
+
+.position-lista{
+    display: flex;
+    justify-content: center;
+}
