@@ -35,34 +35,34 @@
     </header>
 
     <div class="gerenciador">
-        <div class="cadastro-vendas">
+        <div id="cad" class="cadastro-vendas">
 
             <h3>Cadastrar venda</h3>
 
             <div class="formularios">
                 <label for="">
                     Nome do jogo:
-                    <input class="nomeJogo" type="text" placeholder="Nome do jogo">
+                    <input id="nomeJogo" class="nomeJogo" type="text" placeholder="Nome do jogo">
                 </label>
 
                 <label for="">
                     Data da venda:
-                    <input class="data" type="date" placeholder="Data da venda">
+                    <input id="data" class="data" type="date" placeholder="Data da venda">
                 </label>
 
                 <label for="">
                     Código do jogo:
-                    <input class="codigo" type="text" placeholder="Código do jogo">
+                    <input id="codigo" class="codigo" type="text" placeholder="Código do jogo">
                 </label>
 
                 <label for="">
                     Valor do jogo:
-                    <input class="valor" type="number" placeholder="Valor do jogo">
+                    <input id="valor" class="valor" type="number" placeholder="Valor do jogo">
                 </label>
 
                 <label for="">
                     Forma de pagamento:
-                    <select class="pagamento" name="forma-de-pagamento" id="">
+                    <select id="pagamento" class="pagamento" name="forma-de-pagamento">
                         <option value="Débito">Débito</option>
                         <option value="Crédito">Crédito</option>
                         <option value="Pix">Pix</option>
@@ -71,11 +71,13 @@
 
                 <label for="">
                     Nome do cliente:
-                    <input class="cliente" type="text" placeholder="Nome do cliente">
+                    <input id="cliente" class="cliente" type="text" placeholder="Nome do cliente">
                 </label>
 
             </div>
-            <button type="button" onclick="adicionaVendas(event)">Cadastrar</button>
+            <div class="cadastro">
+                <button id="cadastro" type="button" onclick="adicionaVendas(event)" >cadastrar</button>
+            </div>
 
         </div>
     </div>
@@ -83,7 +85,7 @@
     <div class="position-lista">
         <div class="lista">
             <ul>
-                <li>
+                <li class="li">
                     <b>ID do jogo</b>
                     <b>Nome do Jogo</b>
                     <b>Código do jogo</b>
@@ -91,6 +93,8 @@
                     <b>Tipo Pag.</b>
                     <b>Data da venda</b>
                     <b>Nome Cliente</b>
+                    <b style="width: 97px;">Opções</b>
+
                 </li>
             </ul>
         </div>
