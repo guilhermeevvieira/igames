@@ -20,13 +20,11 @@ async function mostraVendas() {
         <input class="b" id="" onclick="apagar('${venda.id}')" type="button" value="excluir">
         </div> 
         `;
-    console.log(venda.data);
 
     ul.appendChild(li);
   });
 }
 function editar(id, nome, codigo, valor, pagamento, data, cliente) {
-  console.log();
 
   document.getElementById("nomeJogo").value = nome;
   document.getElementById("data").value = data;
@@ -40,7 +38,6 @@ function editar(id, nome, codigo, valor, pagamento, data, cliente) {
     mudar(id);
   });
 
-  console.log(document.getElementById("cad"));
 }
 async function mudar(id) {
   const nomeJogo = document.querySelector(".nomeJogo").value;

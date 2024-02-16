@@ -1,34 +1,24 @@
 {
   "vendas": [
     {
-      "cliente": "internet",
-      "pagamento": "Pix",
-      "data": "30-12-2023",
-      "nome": "naruto",
-      "valor": "334",
-      "codigo": "QDWDMKO",
-      "dataEdit": "2023-12-30",
-      "id": "9a7f"
-    },
-    {
       "cliente": "Kaynan",
       "pagamento": "Crédito",
-      "data": "30-12-2023",
+      "data": "29-12-2023",
       "nome": "GTA",
-      "valor": "120",
+      "valor": "155",
       "codigo": "DQWKOD",
-      "dataEdit": "2023-12-30",
+      "dataEdit": "2023-12-29",
       "id": "bfa6"
     },
     {
-      "id": "e8d7",
-      "cliente": "SAd rell",
-      "pagamento": "Débito",
-      "data": "30-12-2024",
-      "nome": "Hentai puzzle",
-      "valor": "240",
-      "codigo": "DQWKMO",
-      "dataEdit": "2024-12-30"
+      "id": "67c6",
+      "cliente": "nicole",
+      "pagamento": "Pix",
+      "data": "24-01-2000",
+      "nome": "the sims",
+      "valor": "2000",
+      "codigo": "sdsdw",
+      "dataEdit": "2000-01-24"
     }
   ]
 }
