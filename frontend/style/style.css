@@ -124,17 +124,23 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 0;
-    column-gap: 10%;
-}
 
-span{
     flex: 1;
     width: 100%;
 }
 
+span{
+    width: 12.5%;
+
+}
+b{
+    width: 12.5%;
+}
 li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 .b {
@@ -161,4 +167,5 @@ li{
 .position-lista{
     display: flex;
     justify-content: center;
+    
 }
